@@ -1,6 +1,6 @@
 # S-bursts from T8 brown dwarf WISE J0623-0456
 
-Custom codes that went into creating plots for "A cold brown dwarf with a dense magnetosphere". They include:
+Custom codes that went into creating plots for article (under review) "A cold brown dwarf with a dense magnetosphere". They include:
 
 [1] Example scripts for visualization of the dynamic spectra and S-burst histograms
 
