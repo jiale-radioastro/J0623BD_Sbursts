@@ -14,7 +14,7 @@ class burst:
         self.Iflux=Iflux
         self.Vflux=Vflux
 
-file_dir='/Volumes/jiale_disk1/projects/PT2024_0017/20241031/'
+file_dir='data/'
 
 bursts1_list=np.load(file_dir+'Sbursts20241031_list.npy',allow_pickle=True)
 burst1_time=np.array([burst0.time for burst0 in bursts1_list])

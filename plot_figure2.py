@@ -158,8 +158,8 @@ for i in range(len(burst1_time)):
     ax1.plot([line_time0,line_time1],[line_freq0,line_freq1],color=color, lw=0.7)
 for freqi in range(len(freq1)):
     if np.isnan(mask1[freqi]):
-        ax1.fill_between([-0.2,0.05],[freq2[freqi]-dfreq2/2,freq2[freqi]-dfreq2/2],\
-                         [freq2[freqi]+dfreq2/2,freq2[freqi]+dfreq2/2],facecolor='red',alpha=1)
+        ax1.fill_between([-0.2,0.05],[freq1[freqi]-dfreq2/2,freq1[freqi]-dfreq1/2],\
+                         [freq1[freqi]+dfreq2/2,freq1[freqi]+dfreq1/2],facecolor='red',alpha=1)
 ax1.set_xlim([-0.2,10.2])
 ax1.set_ylim([1000,1500])
 ax1.set_ylabel("Frequency [MHz]")
@@ -194,6 +194,7 @@ for j, (lo, hi) in enumerate(windows):
         gap_end = cursor + gap
         gap_edges.append((gap_start, gap_end))
         cursor += gap
+
 def compressed_time(x):
     x = np.asarray(x, dtype=float)
     y = np.full_like(x, np.nan)
@@ -211,7 +212,7 @@ for i in range(len(burst2_time)):
     color = colormap(norm(burst2_Lflux[i]))
     x = compressed_time([line_time0, line_time1])
     ax3.plot(x, [line_freq0, line_freq1], color=color, lw=0.7)
-tick_values = [0, 10, 20, 30, 80, 90, 100, 310, 320, 330]
+tick_values = [0, 10, 20, 30, 80, 90, 310, 320, 330]
 tick_positions = compressed_time(tick_values)
 ax3.set_xticks(tick_positions)
 ax3.set_xticklabels(tick_values)
