@@ -6,6 +6,6 @@ Custom codes that went into creating plots for article (under review) "A cold br
 
 [2] Example scripts for calculating the Hill-Pontius radius and Alfven radius
 
-Codes for reducing FAST observation data have been published in "Starspots as the origin of ultrafast drifting radio bursts from an active M dwarf" (https://www.science.org/doi/10.1126/sciadv.adw6116) and the associated Zenodo and Github links. The raw FAST observational data used in this research are available from the FAST archive (http://fast.bao.ac.cn, project ID: PT2024 0017, PT2025 0037) or reasonable requests to the authors.
+Codes for reducing FAST observation data have been published in "Starspots as the origin of ultrafast drifting radio bursts from an active M dwarf" (https://www.science.org/doi/10.1126/sciadv.adw6116) and the associated Zenodo and Github links. The raw FAST observational data used in this work are available from the FAST archive (http://fast.bao.ac.cn, project ID: PT2024 0017, PT2025 0037) or reasonable requests to the authors.
 
 
